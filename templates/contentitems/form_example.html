@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/multiselect.css" media="screen, projection" />
+	<title> </title>
+</head>
+
+<body>
+<div class="container">
+	<div id="body">
+        <form id="base" method="post"  action="">
+			{% csrf_token %}
+			{{ form.as_p }}
+            <br/>
+            <input type="submit">
+        </form>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"type="text/javascript"></script>
+	<script src="{{ STATIC_URL }}js/multiselect.js"></script>
+</div>
+<script type="text/javascript">
+    $(function() {
+        $('select[multiple]').multiselect({max_checked: 5});
+    });
+</script>
+</body>
+</html>

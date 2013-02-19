@@ -1,0 +1,71 @@
+/* Multiselect */
+div.multiselect_menu {
+	background: #F2F1F0;
+	border: 1px solid #ccc;
+	border-top: 0;
+	display: none;
+	max-height: 140px;
+	position: absolute;
+	top: 25px;
+	left: -1px;
+	z-index: 999;
+	overflow-y: auto;
+}
+
+div.trigger_multiselect_menu.open .multiselect_menu {
+	display: block;
+}
+
+div.trigger_multiselect_menu.open .list_filter {
+	display: block;
+}
+
+div.multiselect_menu > div.nocloseonpress {
+	padding-left: 5px;
+}
+
+div.trigger_multiselect_menu {
+	background: url(dropdown.gif) no-repeat center right #F2F1F0;
+	border: 1px solid #ccc;
+	text-align: left;
+	width: 208px;
+	position: relative;
+}
+
+div.trigger_multiselect_menu p {
+	display: block;
+	padding: 0;
+	padding-left: 5px;
+	margin: 0;
+	height: 25px;
+	line-height: 25px;
+}
+
+div.multiselect_menu.withfilter {
+	width: 340px !important;
+	top: 65px;
+}
+
+div.trigger_multiselect_menu .list_filter {
+	display: none;
+	height: 40px;
+	width: 340px;
+	background-color: #DDD;
+	border: 1px solid #CCC;
+	position: absolute;
+	top: 25px;
+	left: -1px;
+	z-index: 999;
+}
+
+div.trigger_multiselect_menu .list_filter input[type="text"] {
+	width: 315px;
+	margin: 5px;
+}
+
+div.multiselect_menu input[type="checkbox"] {
+	margin-right: 3px;
+	position: relative;
+	top: 1px;
+}
+
